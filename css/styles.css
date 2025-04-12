@@ -1,0 +1,225 @@
+    .btn-warninge {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 1.5;
+        border-radius: 3px;
+        color: #fff;
+        background-color: #00B1C9;
+        border: 0;
+        transition: 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .imgupload {
+        width: 200px;
+        height: 290px;
+        font-size: 15px;
+        line-height: 1.5;
+        border-radius: 3px;
+        background: #C4C4C4;
+        color: #fff;
+        border: 0;
+        transition: 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .imgupload input[type="file"] {
+        cursor: pointer;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: scale(1);
+        opacity: 0;
+    }
+    
+    .btn-warninge input[type="file"] {
+        cursor: pointer;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: scale(3);
+        opacity: 0;
+    }
+    
+    .modal-dialog-fixed-width {
+        min-width: 900px;
+    }
+    
+    .btn-warning:hover {
+        background-color: #d9a400;
+    }
+    /*  darkmode*/
+    
+     :root {
+        --background-color: white;
+        --text-color: black;
+        --card-color: white;
+        --cube-shadow: 0px 0px 5px -1px rgba(0, 122, 138, 0.25);
+        --admin-cube-color: white;
+        --admin-cube-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        --border-bottom: 1px solid #101010;
+        --scroll-bar-track: ;
+        --scroll-bar-thumb: #00B1C9;
+        --hoverAddButton: #00B1C9;
+        --hoverLink: white;
+        --hoverDomain: #00B1C9;
+    }
+    
+     :root.custom-button:hover {
+        --admin-cube-color: yellow;
+    }
+    
+    body.dark {
+        /* Styles pour le thème sombre */
+        background-color: #1E1E1E;
+        color: white;
+    }
+    
+    .dark {
+        --background-color: #1E1E1E;
+        --text-color: white;
+        --card-color: rgba(255, 255, 255, 0.18);
+        --admin-cube-color: black;
+        --cube-shadow: 0px 0px 6px -2px rgba(0, 122, 138, 0.25), 0px 2px 9px 0px rgba(235, 253, 255, 0.06) inset, 0px -3px 9px 0px rgba(0, 0, 0, 0.25) inset;
+        --admin-cube-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        --border-bottom: 1px solid #FFF;
+        --scroll-bar-thumb: rgba(255, 255, 255, 0.18);
+        --hoverLink: white;
+        --hoverDomain: #00B1C9;
+        --hoverAddButton: grey;
+    }
+    
+    body.loading {
+        visibility: hidden;
+    }
+    
+    .carousel-container1 {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .carousel-track {
+        display: flex;
+        transition: transform 0.3s ease-in;
+    }
+    
+    .carousel-item2 {
+        width: 100%;
+    }
+    
+    .carousel-btn3 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ccc;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    /*      scroll bar edit*/
+    
+     ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        box-shadow: var(--cube-shadow);
+        border-radius: 50px;
+        margin-inline: 15px;
+        background: var();
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: var(--scroll-bar-thumb);
+        border-radius: 8px;
+    }
+    /* Effect */
+    
+    #moon:hover {
+        transition: 0.3s ease;
+        transform: scale(1.3);
+    }
+    
+    #adminMoon:hover {
+        transition: 0.3s ease;
+        transform: scale(1.3);
+    }
+    
+    #custom-button {
+        background: var( --admin-cube-color);
+        color: var(--text-color);
+        transition: background 0.5s;
+    }
+    
+    #modifier-button {
+        background: #00B1C9;
+        color: var(--text-color);
+        transition: 0.3s ease;
+    }
+    
+    #domainBox:hover {
+        transition: 0.3s ease;
+        background: var(--hoverDomain);
+    }
+    
+    #domainBox a {
+        color: var(--text-color);
+        transition: 0.3s ease;
+    }
+    
+    #domainBox:hover a {
+        color: var(--hoverLink);
+        ;
+    }
+    
+    #cardCss {
+        transition: 0.3s ease;
+    }
+    
+    #cardCss:hover {
+        transform: scale(1.05);
+    }
+    
+    #userviewBigger:hover {
+        transition: 0.3s ease;
+        transform: scale(1.2);
+    }
+    
+    #custom-button:hover {
+        /* Styles lorsqu'on passe le curseur au-dessus */
+        background: var(--hoverAddButton);
+        transform: scale(0.97);
+        color: var(--hoverLink);
+    }
+    
+    #modifier-button:hover {
+        /* Styles lorsqu'on passe le curseur au-dessus */
+        background: #32c0d3;
+        transform: scale(1.05);
+    }
+    
+    #delete-button:hover {
+        /* Styles lorsqu'on passe le curseur au-dessus */
+        transition: 0.3s ease;
+        transform: scale(1.05);
+    }
